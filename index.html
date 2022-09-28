@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +31,35 @@
         }
       </script>
 </head>
-<body>
-    
+<body class="bg-bgdark">
+
+    <!-- Header Area -->
+
+    <header class="flex w-full sticky bg-[rgba(27,27,60,.7)] top-0 z-[99] backdrop-blur-[10px] border-b border-soft-gray px-[25px] py-5 sm:px-[50px] sm:py-[30px] md:px-[100px] md:py-[25px]">
+        <div class="w-full mx-auto flex items-center relative max-w[500px] sm:max-w-[800px] md:max-w-[1200px]">
+            <a href="./index.html" class="group brand-logo block w-[40px] h-[40px] md:w-[50px] md:h-[50px]">
+                <img src="./images/yd.svg" alt="yd-logo" class="group-hover:opacity-70 transition duration-300">
+            </a>
+            <label for="mobile-nav-toggle" class="absolute right-0 transition duration-300 hover:opacity-30 sm:hidden">
+                <img src="./images/align-right.svg" alt="toggle icon" class="block w-[30px] h-[30px]">
+            </label>
+            <input type="checkbox" id="mobile-nav-toggle" class="hidden peer">
+            <nav class="flex flex-col items-start font-promptSemiBold invisible opacity-0 fixed top-[100px] right-[25px] bg-bgdark border-2 border-primary py-[15px] pr-[80px] pl-[20px] clip-rectangle peer-checked:visible peer-checked:opacity-100 sm:visible sm:opacity-100 sm:static sm:bg-[rgba(0,0,0,0)] sm:flex-row sm:items-center sm:ml-[20px] sm:p-0 sm:border-0 md:ml-[45px]">
+                <a href="#about" class="text-subtitle decoration-0 transition duration-300 ease-in-out hover:text-light-purple text-[15px] mb-[15px] sm:mb-0 sm:py-0 sm:px-[14px] md:text-[16px] md:py-0 md:px-[18px]">About Me</a>
+                <a href="#skills" class="text-subtitle decoration-0 transition duration-300 ease-in-out hover:text-light-purple text-[15px] mb-[15px] sm:mb-0 sm:py-0 sm:px-[14px] md:text-[16px] md:py-0 md:px-[18px]">Skills</a>
+                <a href="#portfolio" class="text-subtitle decoration-0 transition duration-300 ease-in-out hover:text-light-purple text-[15px] mb-[15px] sm:mb-0 sm:py-0 sm:px-[14px] md:text-[16px] md:py-0 md:px-[18px]">Portfolio</a>
+                <a href="#contact" class="text-subtitle decoration-0 transition duration-300 ease-in-out hover:text-light-purple text-[15px] sm:mb-0 sm:py-0 sm:px-[14px] md:text-[16px] md:py-0 md:px-[18px]">Contact</a>
+            </nav>
+            <div class="flex justify-between items-center ml-auto mr-[50px] min-w-[80px] sm:min-w[80px] sm:mr-0 md:min-w-[90px]">
+                <a href="https://github.com/morphiezy" target="_blank" class="block md:w-[32px] md:h-[32px]">
+                    <img src="./images/github.svg" alt="github" class="w-[30px] h-[30px] transition duration-300 hover:opacity-60">
+                </a>
+                <a href="https://www.linkedin.com/in/m-yardan-aqiella" target="_blank" class="block md:w-[32px] md:h-[32px]">
+                    <img src="./images/linkedin.svg" alt="linkedin" class="w-[30px] h-[30px] transition duration-300 hover:opacity-60">
+                </a>
+            </div>
+        </div>
+    </header>
+
 </body>
 </html>
