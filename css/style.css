@@ -51,6 +51,14 @@ body{
     text-decoration: none;
 }
 
+.retro-text{
+    text-shadow: 4px 4px #7251CE;
+}
+
+.retro-text:hover{
+    text-shadow: 0 0 transparent;
+}
+
 
 /* Viewport Smartphone Device */
 
