@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Init font face */
+
+@font-face {
+    font-family: "promptLight";
+    src: url(../font/Prompt-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "promptSemiBold";
+    src: url(../font/Prompt-SemiBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "promptBold";
+    src: url(../font/Prompt-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    animation: open .8s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+
+/* Animation */
+
+@keyframes open{
+    from{
+        opacity: 0;
+        clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+    }
+    to{
+        opacity: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.highlight-text{
+    color: #AE92FF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Viewport Smartphone Device */
+
+@media screen and (min-width:320px) {
+    .clip-rectangle{
+        transition: 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    }
+
+    input[id="mobile-nav-toggle"]:checked + .clip-rectangle {
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+}
+
+
+/* Viewport Tablet Device */
+
+@media screen and (min-width:641px) {
+    .clip-rectangle{
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+}

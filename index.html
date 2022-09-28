@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Yardan Aqiella - Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+                'sm': '641px',
+                'md': '1080px'
+            },
+            colors: {
+                "soft-gray": "rgba(226,232,240,.05)",
+                "bgdark": "#1B1B3C",
+                "title": "#CCD6F6",
+                "subtitle": "#8892B0",
+                "primary": "#7251CE",
+                "light-purple": "#AE92FF"
+            },
+            fontFamily: {
+                "promptLight": ["promptLight", "sans-serif"],
+                "promptSemiBold": ["promptSemiBold", "sans-serif"],
+                "promptBold": ["promptBold", "sans-serif"]
+            },
+          }
+        }
+      </script>
+</head>
+<body class="bg-bgdark">
+
+    <!-- Header Area -->
+
+    <header class="flex w-full sticky bg-[rgba(27,27,60,.7)] top-0 z-[99] backdrop-blur-[10px] border-b border-soft-gray px-[25px] py-5 sm:px-[50px] sm:py-[30px] md:px-[100px] md:py-[25px]">
+        <div class="w-full mx-auto flex items-center relative max-w[500px] sm:max-w-[800px] md:max-w-[1200px]">
+            <a href="./index.html" class="group brand-logo block w-[40px] h-[40px] md:w-[50px] md:h-[50px]">
+                <img src="./images/yd.svg" alt="yd-logo" class="group-hover:opacity-70 transition duration-300">
+            </a>
+            <label for="mobile-nav-toggle" class="absolute right-0 transition duration-300 hover:opacity-30 sm:hidden">
+                <img src="./images/align-right.svg" alt="toggle icon" class="block w-[30px] h-[30px]">
+            </label>
+            <input type="checkbox" id="mobile-nav-toggle" class="hidden peer">
+            <nav class="flex flex-col items-start font-promptSemiBold invisible opacity-0 fixed top-[100px] right-[25px] bg-bgdark border-2 border-primary py-[15px] pr-[80px] pl-[20px] clip-rectangle peer-checked:visible peer-checked:opacity-100 sm:visible sm:opacity-100 sm:static sm:bg-[rgba(0,0,0,0)] sm:flex-row sm:items-center sm:ml-[20px] sm:p-0 sm:border-0 md:ml-[45px]">
+                <a href="#about" class="text-subtitle decoration-0 transition duration-300 ease-in-out hover:text-light-purple text-[15px] mb-[15px] sm:mb-0 sm:py-0 sm:px-[14px] md:text-[16px] md:py-0 md:px-[18px]">About Me</a>
+                <a href="#skills" class="text-subtitle decoration-0 transition duration-300 ease-in-out hover:text-light-purple text-[15px] mb-[15px] sm:mb-0 sm:py-0 sm:px-[14px] md:text-[16px] md:py-0 md:px-[18px]">Skills</a>
+                <a href="#portfolio" class="text-subtitle decoration-0 transition duration-300 ease-in-out hover:text-light-purple text-[15px] mb-[15px] sm:mb-0 sm:py-0 sm:px-[14px] md:text-[16px] md:py-0 md:px-[18px]">Portfolio</a>
+                <a href="#contact" class="text-subtitle decoration-0 transition duration-300 ease-in-out hover:text-light-purple text-[15px] sm:mb-0 sm:py-0 sm:px-[14px] md:text-[16px] md:py-0 md:px-[18px]">Contact</a>
+            </nav>
+            <div class="flex justify-between items-center ml-auto mr-[50px] min-w-[80px] sm:min-w[80px] sm:mr-0 md:min-w-[90px]">
+                <a href="https://github.com/morphiezy" target="_blank" class="block md:w-[32px] md:h-[32px]">
+                    <img src="./images/github.svg" alt="github" class="w-[30px] h-[30px] transition duration-300 hover:opacity-60">
+                </a>
+                <a href="https://www.linkedin.com/in/m-yardan-aqiella" target="_blank" class="block md:w-[32px] md:h-[32px]">
+                    <img src="./images/linkedin.svg" alt="linkedin" class="w-[30px] h-[30px] transition duration-300 hover:opacity-60">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Area -->
+
+    <main class="py-0 px-[25px] mx-0 my-[40px] sm:px-[50px] sm:my-[70px] md:px-[100px] md:my-[80px]">
+
+        <!-- Personal Profile Section -->
+
+        <section class="w-full mx-auto max-w[500px] sm:max-w-[800px] md:max-w-[1200px]">
+            <h1 class="text-[30px] leading-10 font-promptBold text-title sm:text-[45px] sm:leading-[55px] md:text-[65px] md:leading-[85px]">M Yardan Aqiella.</h1>
+            <h2 class="text-[30px] leading-10 font-promptBold text-title opacity-60 mt-[10px] sm:text-[45px] sm:leading-[55px] sm:mt-[15px] md:text-[65px] md:leading-[85px] md:mt-0">I Enjoying Build Anything.</h2>
+            <p class="font-promptLight text-subtitle mt-[20px] leading-7 text-[15px] sm:mt-7 sm:leading-7 sm:text-[16px] md:mt-[30px] md:max-w-[700px] md:leading-8">Frontend Junior developer specializing in websites with one year experience building responsive website applications using HTML CSS Javascript as well as using modern libraries & frameworks in development. Now I'm a <span class="highlight-text">Frontend Engineering Student</span> at <a href="https://www.ruangguru.com" target="_blank" class="highlight-text">Ruangguru</a> for 5 months.</p>
+            <div class="flex flex-wrap items-center mt-[45px] sm:mt-[50px] md:mt-[60px]">
+                <button class="group rounded-[5px] transition duration-300 cursor-pointer bg-primary border border-transparent hover:border-primary hover:bg-[rgba(114,81,206,.15)] py-4 px-8 w-full mb-5 sm:w-auto sm:mr-[30px] sm:my-0 md:mr-10">
+                    <a href="./files/cv.pdf" class="no-underline text-title font-promptSemiBold transition duration-300 group-hover:text-primary text-[15px] sm:text-[16px]">Download Resume</a>
+                </button>
+                <button class="rounded-[5px] transition duration-300 cursor-pointer border border-primary bg-bgdark hover:bg-[rgba(114,81,206,.15)] py-4 px-8 w-full sm:w-auto">
+                    <a href="mailto:myardan.aqiella22@gmail.com" class="no-underline text-primary font-promptSemiBold transition duration-300 text-[15px] sm:text-[16px]">Contact Me</a>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
