@@ -8,21 +8,21 @@
 
 @font-face {
     font-family: "promptLight";
-    src: url(../font/Prompt-Light.ttf);
+    src: url(./assets/font/Prompt-Light.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "promptSemiBold";
-    src: url(../font/Prompt-SemiBold.ttf);
+    src: url(./assets/font/Prompt-SemiBold.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "promptBold";
-    src: url(../font/Prompt-Bold.ttf);
+    src: url(./assets/font/Prompt-Bold.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -43,6 +43,16 @@ body{
         opacity: 1;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
+}
+
+@keyframes float {
+	0% {transform: rotate(0) translate(-50%,-50%) ;}
+	50% {transform: rotate(20deg) translate(-50%,-50%);}
+	100% {transform: rotate(0) translate(-50%,-50%);}
+}
+
+.floating{
+    animation: float 30s infinite;
 }
 
 .highlight-text{
@@ -67,10 +77,13 @@ body{
 }
 
 
-
 /* Viewport Smartphone Device */
 
 @media screen and (min-width:320px) {
+    .floating{
+        width: 500px;
+    }
+    
     .clip-rectangle{
         transition: 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
         clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
@@ -87,5 +100,14 @@ body{
 @media screen and (min-width:641px) {
     .clip-rectangle{
         clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+}
+
+
+/* Viewport Laptop Device */
+
+@media screen and (min-width:1080px) {
+    .floating{
+        width: 900px;
     }
 }
