@@ -59,6 +59,14 @@ body{
     text-shadow: 0 0 transparent;
 }
 
+.custom-line-clamp{
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+
 
 /* Viewport Smartphone Device */
 
