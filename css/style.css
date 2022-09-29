@@ -8,21 +8,21 @@
 
 @font-face {
     font-family: "promptLight";
-    src: url(./assets/font/Prompt-Light.ttf);
+    src: url(../font/Prompt-Light.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "promptSemiBold";
-    src: url(./assets/font/Prompt-SemiBold.ttf);
+    src: url(../font/Prompt-SemiBold.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "promptBold";
-    src: url(./assets/font/Prompt-Bold.ttf);
+    src: url(../font/Prompt-Bold.ttf);
     font-weight: normal;
     font-style: normal;
 }
